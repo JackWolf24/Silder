@@ -17,9 +17,6 @@ void setup() {
   tft.setTextWrap(false);
   tft.fillScreen(ST7735_BLACK);
 
-}
-
-void loop() {
   tft.setRotation(1);
 
   tft.drawFastHLine(0, 30, 160, ST7735_GREEN);
@@ -32,6 +29,11 @@ void loop() {
   delay(1000);
   tft.fillScreen(ST7735_BLACK);
 
+
+}
+
+void loop() {
+  
 
 
 }
