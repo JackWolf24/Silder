@@ -16,5 +16,4 @@ void setup() {
 
 void loop() {
   stepper.rotate(1);
-
 }
