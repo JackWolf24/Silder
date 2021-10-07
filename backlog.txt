@@ -1,0 +1,63 @@
+bare minimum dod:
+cart moves end to end, no overheat, no stalling
+set time possible max 24h
+no noticeable vibrations
+stands on own feet
+instructions
+
+issue:
+software:
+	Home speed == prev. filming speed
+	Imedieate start results in shaky recordings => Acc/decelleration 
+	slow rotaty turn sample rate => interrupts
+	weired ui
+mechanical:
+	el side enclosure
+	!loose belt axis el site
+	rails too close to each other at ends
+	rails too flexible in middle
+	feet fixture not clear 
+	!el. side endstop never touched by kart
+	mot. side endstop never touched by kart
+	no camera mount
+	motor transferes too much vibrations to camera
+elektinics:
+	!only proto electronik 
+	!proto electronic just with arduino uno
+	!just proto electonics
+other:
+	no instructions
+
+
+Feat:
+
+software:
+	set total time not only speed
+	display remaining time
+	go back to menue if job done
+	edit setup page
+	disable motor everytime its not in use
+	super long slide periodes
+	bluetooth module
+	inceasing time incements at speed set
+	only travel set distance from setpoint
+meachanical:
+	angle adjustment camera mount
+	compability to 3/8" tripot at both ends
+
+testing:
+sysstemtest:
+	minspeed
+	maxspeed
+	flat  angles
+	steep angles
+max batt circle lifetime
+
+unit test :
+	motor
+	stepup module
+	encoder
+	dislplay
+
+
+	
