@@ -1,6 +1,6 @@
 
 
-#define TFT_PIN_CS   10 // Arduino-Pin an Display CS   
+#define TFT_PIN_CS   7 // Arduino-Pin an Display CS   
 #define TFT_PIN_DC   9  // Arduino-Pin an 
 #define TFT_PIN_RST  8  // Arduino Reset-Pin
 

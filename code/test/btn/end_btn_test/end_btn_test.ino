@@ -1,5 +1,5 @@
 int inend1 = 7;
-int inend2 = 2;
+int inend2 = A4;
 int end1;
 int end2;
 
