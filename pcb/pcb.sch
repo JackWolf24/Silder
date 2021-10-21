@@ -163,29 +163,12 @@ Wire Wire Line
 	6250 4000 6250 3800
 Wire Wire Line
 	6250 3800 6450 3800
-$Comp
-L power:GNDREF #PWR0106
-U 1 1 61660AED
-P 5450 4750
-F 0 "#PWR0106" H 5450 4500 50  0001 C CNN
-F 1 "GNDREF" H 5455 4577 50  0000 C CNN
-F 2 "" H 5450 4750 50  0001 C CNN
-F 3 "" H 5450 4750 50  0001 C CNN
-	1    5450 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 4000 3850 4000
-Wire Wire Line
-	4050 3900 3850 3900
 Wire Wire Line
 	3450 4800 3450 5150
 Wire Wire Line
 	3450 5150 3550 5150
 Wire Wire Line
 	5750 3500 5950 3500
-Wire Wire Line
-	5450 4750 5450 4400
 Wire Wire Line
 	4850 4100 4750 4100
 Wire Wire Line
@@ -217,35 +200,12 @@ Text GLabel 6450 3000 2    50   Input ~ 0
 stepper_2B
 Wire Wire Line
 	4750 3900 4750 2650
-$Comp
-L MCU_Module:Arduino_Nano_v3.x A1
-U 1 1 6164E403
-P 3350 3800
-F 0 "A1" H 3350 2711 50  0000 C CNN
-F 1 "Nano_v3.x" H 2953 2559 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 3350 3800 50  0001 C CIN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 3350 3800 50  0001 C CNN
-	1    3350 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4850 3700 4300 3700
 Wire Wire Line
-	4300 3700 4300 4550
-Wire Wire Line
-	3850 4550 3850 4500
-Wire Wire Line
-	3850 4400 4250 4400
-Wire Wire Line
-	4250 4400 4250 3600
+	4300 3700 4300 4300
 Wire Wire Line
 	4250 3600 4850 3600
-Wire Wire Line
-	4850 3500 4150 3500
-Wire Wire Line
-	4150 3500 4150 4300
-Wire Wire Line
-	4150 4300 3850 4300
 $Comp
 L Device:CP C1
 U 1 1 616E050A
@@ -394,4 +354,115 @@ Wire Wire Line
 	2650 4750 2650 3900
 Wire Wire Line
 	2650 3900 2850 3900
+Wire Wire Line
+	6450 4000 6300 4000
+Wire Wire Line
+	6300 4000 6300 4500
+Wire Wire Line
+	6300 4500 4400 4500
+Wire Wire Line
+	4400 4000 3900 4000
+Wire Wire Line
+	4400 4000 4400 4500
+Wire Wire Line
+	4250 4200 4250 3600
+Wire Wire Line
+	3850 4300 4300 4300
+Wire Wire Line
+	3850 4200 4250 4200
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 6164E403
+P 3350 3800
+F 0 "A1" H 3350 2711 50  0000 C CNN
+F 1 "Nano_v3.x" H 2953 2559 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 3350 3800 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 3350 3800 50  0001 C CNN
+	1    3350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:2N3906 Q1
+U 1 1 61744453
+P 4200 3000
+F 0 "Q1" H 4390 3046 50  0000 L CNN
+F 1 "2N3906" H 4390 2955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4400 2925 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 4200 3000 50  0001 L CNN
+	1    4200 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3000 4000 3000
+Wire Wire Line
+	4000 3000 4000 3200
+Connection ~ 4000 3000
+Wire Wire Line
+	4000 3900 3850 3900
+$Comp
+L Device:R R1
+U 1 1 617556D0
+P 4150 3350
+F 0 "R1" V 3943 3350 50  0000 C CNN
+F 1 "R" V 4034 3350 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4080 3350 50  0001 C CNN
+F 3 "~" H 4150 3350 50  0001 C CNN
+	1    4150 3350
+	0    1    1    0   
+$EndComp
+Connection ~ 4000 3350
+Wire Wire Line
+	4000 3350 4000 3900
+Text GLabel 4300 2800 1    50   Input ~ 0
+ardu_5V
+Wire Wire Line
+	5450 4750 5450 4400
+$Comp
+L power:GNDREF #PWR0106
+U 1 1 61660AED
+P 5450 4750
+F 0 "#PWR0106" H 5450 4500 50  0001 C CNN
+F 1 "GNDREF" H 5455 4577 50  0000 C CNN
+F 2 "" H 5450 4750 50  0001 C CNN
+F 3 "" H 5450 4750 50  0001 C CNN
+	1    5450 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0107
+U 1 1 61765388
+P 4300 3350
+F 0 "#PWR0107" H 4300 3100 50  0001 C CNN
+F 1 "GNDREF" H 4305 3177 50  0000 C CNN
+F 2 "" H 4300 3350 50  0001 C CNN
+F 3 "" H 4300 3350 50  0001 C CNN
+	1    4300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0108
+U 1 1 6176BE49
+P 4550 3200
+F 0 "#PWR0108" H 4550 2950 50  0001 C CNN
+F 1 "GNDREF" H 4555 3027 50  0000 C CNN
+F 2 "" H 4550 3200 50  0001 C CNN
+F 3 "" H 4550 3200 50  0001 C CNN
+	1    4550 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3200 4550 3200
+Wire Wire Line
+	4000 3200 4250 3200
+Wire Wire Line
+	4250 3200 4250 3250
+Wire Wire Line
+	4250 3250 4450 3250
+Wire Wire Line
+	4450 3250 4450 3500
+Wire Wire Line
+	4450 3500 4850 3500
+Connection ~ 4000 3200
+Wire Wire Line
+	4000 3200 4000 3350
 $EndSCHEMATC
