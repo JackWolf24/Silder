@@ -43,20 +43,6 @@ Wire Notes Line
 	2100 2300 1400 2300
 Wire Notes Line
 	1450 2300 1450 2850
-Text GLabel 6450 3450 2    50   Input ~ 0
-stepper_1A
-Text GLabel 6450 3300 2    50   Input ~ 0
-stepper_1B
-Text GLabel 6450 3150 2    50   Input ~ 0
-stepper_2A
-Wire Notes Line
-	6300 2900 6300 3600
-Wire Notes Line
-	6300 3600 7000 3600
-Wire Notes Line
-	7000 3600 7000 2900
-Wire Notes Line
-	7000 2900 6300 2900
 Text GLabel 6450 3800 2    50   Input ~ 0
 end_gnd
 Text GLabel 6450 4000 2    50   Input ~ 0
@@ -74,30 +60,9 @@ Wire Wire Line
 Wire Wire Line
 	3250 2500 3250 2800
 Wire Wire Line
-	3700 1600 3700 2450
+	3700 1600 3700 2350
 Wire Wire Line
 	3700 2450 3550 2450
-Wire Wire Line
-	3550 2450 3550 2650
-Wire Wire Line
-	4850 3300 4850 3200
-Wire Wire Line
-	3250 2500 5450 2500
-Wire Wire Line
-	5450 2500 5450 2900
-Connection ~ 3250 2500
-Wire Wire Line
-	5250 2900 5250 2650
-Wire Wire Line
-	5250 2650 4750 2650
-Connection ~ 3550 2650
-Wire Wire Line
-	3550 2650 3550 2750
-Connection ~ 4750 4000
-Wire Wire Line
-	4750 4000 4750 3900
-Wire Wire Line
-	4750 4100 4750 4000
 $Comp
 L power:GNDREF #PWR0102
 U 1 1 61656CBC
@@ -129,108 +94,9 @@ Wire Wire Line
 Wire Wire Line
 	3500 1850 3500 1600
 Wire Wire Line
-	5950 3500 5950 3300
-Wire Wire Line
-	5950 3300 6450 3300
-Wire Wire Line
-	6450 3450 6050 3450
-Wire Wire Line
-	6050 3450 6050 3600
-Wire Wire Line
-	6050 3600 5750 3600
-Wire Wire Line
-	6450 3150 6150 3150
-Wire Wire Line
-	6150 3150 6150 3700
-Wire Wire Line
-	6150 3700 5750 3700
-$Comp
-L power:GNDREF #PWR0105
-U 1 1 6165E54D
-P 6100 4550
-F 0 "#PWR0105" H 6100 4300 50  0001 C CNN
-F 1 "GNDREF" H 6105 4377 50  0000 C CNN
-F 2 "" H 6100 4550 50  0001 C CNN
-F 3 "" H 6100 4550 50  0001 C CNN
-	1    6100 4550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6100 4550 6100 4000
-Wire Wire Line
-	6100 4000 6250 4000
-Wire Wire Line
-	6250 4000 6250 3800
-Wire Wire Line
-	6250 3800 6450 3800
-Wire Wire Line
 	3450 4800 3450 5150
 Wire Wire Line
 	3450 5150 3550 5150
-Wire Wire Line
-	5750 3500 5950 3500
-Wire Wire Line
-	4850 4100 4750 4100
-Wire Wire Line
-	4850 4000 4750 4000
-Wire Wire Line
-	4750 3900 4850 3900
-$Comp
-L Driver_Motor:Pololu_Breakout_A4988 A2
-U 1 1 6164C436
-P 5250 3600
-F 0 "A2" H 5300 4481 50  0000 C CNN
-F 1 "A4988" H 5300 4390 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 5525 2850 50  0001 L CNN
-F 3 "https://www.pololu.com/product/2980/pictures" H 5350 3300 50  0001 C CNN
-	1    5250 3600
-	1    0    0    -1  
-$EndComp
-Connection ~ 4750 3900
-Connection ~ 4750 2650
-Wire Wire Line
-	4750 2650 3550 2650
-Wire Wire Line
-	6450 3000 6200 3000
-Wire Wire Line
-	6200 3000 6200 3800
-Wire Wire Line
-	6200 3800 5750 3800
-Text GLabel 6450 3000 2    50   Input ~ 0
-stepper_2B
-Wire Wire Line
-	4750 3900 4750 2650
-Wire Wire Line
-	4850 3700 4300 3700
-Wire Wire Line
-	4300 3700 4300 4300
-Wire Wire Line
-	4250 3600 4850 3600
-$Comp
-L Device:CP C1
-U 1 1 616E050A
-P 5850 2650
-F 0 "C1" H 5968 2696 50  0000 L CNN
-F 1 "CP" H 5968 2605 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 5888 2500 50  0001 C CNN
-F 3 "~" H 5850 2650 50  0001 C CNN
-	1    5850 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 2500 5850 2500
-Connection ~ 5450 2500
-$Comp
-L power:GNDREF #PWR0101
-U 1 1 616E3C5C
-P 5850 2800
-F 0 "#PWR0101" H 5850 2550 50  0001 C CNN
-F 1 "GNDREF" H 5855 2627 50  0000 C CNN
-F 2 "" H 5850 2800 50  0001 C CNN
-F 3 "" H 5850 2800 50  0001 C CNN
-	1    5850 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4050 1600 4050 2100
 Wire Wire Line
@@ -303,9 +169,6 @@ Wire Wire Line
 	2700 4600 2700 2750
 Wire Wire Line
 	2700 2750 3550 2750
-Connection ~ 3550 2750
-Wire Wire Line
-	3550 2750 3550 2800
 Wire Wire Line
 	1850 4300 2550 4300
 Wire Wire Line
@@ -361,15 +224,22 @@ Wire Wire Line
 Wire Wire Line
 	6300 4500 4400 4500
 Wire Wire Line
-	4400 4000 3900 4000
-Wire Wire Line
 	4400 4000 4400 4500
 Wire Wire Line
-	4250 4200 4250 3600
+	3550 2450 3550 2550
+$Comp
+L power:GNDREF #PWR0101
+U 1 1 617CFD4D
+P 5600 4700
+F 0 "#PWR0101" H 5600 4450 50  0001 C CNN
+F 1 "GNDREF" H 5605 4527 50  0000 C CNN
+F 2 "" H 5600 4700 50  0001 C CNN
+F 3 "" H 5600 4700 50  0001 C CNN
+	1    5600 4700
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3850 4300 4300 4300
-Wire Wire Line
-	3850 4200 4250 4200
+	5600 4350 5600 4450
 $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 6164E403
@@ -381,88 +251,110 @@ F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 3350 3800 50
 	1    3350 3800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3550 2800 3550 2750
+Connection ~ 3550 2750
+Wire Wire Line
+	5400 2550 3550 2550
+Connection ~ 3550 2550
+Wire Wire Line
+	3550 2550 3550 2750
+Wire Wire Line
+	5600 2500 5600 2550
+Text GLabel 6450 2950 2    50   Input ~ 0
+mot_+
+Text GLabel 6450 3150 2    50   Input ~ 0
+mot_-
+Wire Wire Line
+	6450 3150 6000 3150
+Wire Wire Line
+	6000 2950 6450 2950
+Wire Wire Line
+	4750 3150 5000 3150
+Wire Wire Line
+	4550 2950 5000 2950
+Wire Wire Line
+	5000 3350 4300 3350
+Wire Notes Line
+	6350 2800 6350 3300
+Wire Notes Line
+	6350 3300 6900 3300
+Wire Notes Line
+	6900 3300 6900 2800
+Wire Notes Line
+	6900 2800 6350 2800
+Wire Wire Line
+	6450 3800 6100 3800
+Wire Wire Line
+	6100 3800 6100 4450
+Wire Wire Line
+	6100 4450 5600 4450
+Connection ~ 5600 4450
+Wire Wire Line
+	5600 4450 5600 4700
+Text GLabel 6500 4650 2    50   Input ~ 0
+encoder1_signal
+Text GLabel 6500 4850 2    50   Input ~ 0
+encoder2_signal
+Text GLabel 6500 4500 2    50   Input ~ 0
+ardu_5v
+Wire Wire Line
+	6500 4500 6500 4300
+Wire Wire Line
+	6500 4300 7300 4300
+Wire Wire Line
+	6500 4650 4450 4650
+Wire Wire Line
+	4450 4650 4450 3900
+Wire Wire Line
+	4450 3900 3850 3900
+Wire Wire Line
+	3850 4300 4750 4300
+Wire Wire Line
+	4750 3150 4750 4300
+Wire Wire Line
+	3850 4200 4550 4200
+Wire Wire Line
+	4550 4200 4550 2950
+Wire Wire Line
+	3850 4100 4300 4100
+Wire Wire Line
+	4300 4100 4300 3350
+Wire Wire Line
+	3850 4000 4400 4000
+Connection ~ 3700 2350
+Wire Wire Line
+	3700 2350 3700 2450
 $Comp
-L Transistor_BJT:2N3906 Q1
-U 1 1 61744453
-P 4200 3000
-F 0 "Q1" H 4390 3046 50  0000 L CNN
-F 1 "2N3906" H 4390 2955 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4400 2925 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 4200 3000 50  0001 L CNN
-	1    4200 3000
+L Driver_Motor:L293D U1
+U 1 1 617B0205
+P 5500 3550
+F 0 "U1" H 5500 4731 50  0000 C CNN
+F 1 "L293D" H 5500 4640 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 5750 2800 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/l293.pdf" H 5200 4250 50  0001 C CNN
+	1    5500 3550
 	1    0    0    -1  
 $EndComp
+Connection ~ 3250 2500
 Wire Wire Line
-	4100 3000 4000 3000
+	3250 2500 5600 2500
 Wire Wire Line
-	4000 3000 4000 3200
-Connection ~ 4000 3000
+	7300 2350 7300 4300
 Wire Wire Line
-	4000 3900 3850 3900
-$Comp
-L Device:R R1
-U 1 1 617556D0
-P 4150 3350
-F 0 "R1" V 3943 3350 50  0000 C CNN
-F 1 "R" V 4034 3350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4080 3350 50  0001 C CNN
-F 3 "~" H 4150 3350 50  0001 C CNN
-	1    4150 3350
-	0    1    1    0   
-$EndComp
-Connection ~ 4000 3350
+	3700 2350 7300 2350
 Wire Wire Line
-	4000 3350 4000 3900
-Text GLabel 4300 2800 1    50   Input ~ 0
-ardu_5V
+	6500 4850 4050 4850
 Wire Wire Line
-	5450 4750 5450 4400
-$Comp
-L power:GNDREF #PWR0106
-U 1 1 61660AED
-P 5450 4750
-F 0 "#PWR0106" H 5450 4500 50  0001 C CNN
-F 1 "GNDREF" H 5455 4577 50  0000 C CNN
-F 2 "" H 5450 4750 50  0001 C CNN
-F 3 "" H 5450 4750 50  0001 C CNN
-	1    5450 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR0107
-U 1 1 61765388
-P 4300 3350
-F 0 "#PWR0107" H 4300 3100 50  0001 C CNN
-F 1 "GNDREF" H 4305 3177 50  0000 C CNN
-F 2 "" H 4300 3350 50  0001 C CNN
-F 3 "" H 4300 3350 50  0001 C CNN
-	1    4300 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR0108
-U 1 1 6176BE49
-P 4550 3200
-F 0 "#PWR0108" H 4550 2950 50  0001 C CNN
-F 1 "GNDREF" H 4555 3027 50  0000 C CNN
-F 2 "" H 4550 3200 50  0001 C CNN
-F 3 "" H 4550 3200 50  0001 C CNN
-	1    4550 3200
-	1    0    0    -1  
-$EndComp
+	4050 4850 4050 3800
 Wire Wire Line
-	4300 3200 4550 3200
-Wire Wire Line
-	4000 3200 4250 3200
-Wire Wire Line
-	4250 3200 4250 3250
-Wire Wire Line
-	4250 3250 4450 3250
-Wire Wire Line
-	4450 3250 4450 3500
-Wire Wire Line
-	4450 3500 4850 3500
-Connection ~ 4000 3200
-Wire Wire Line
-	4000 3200 4000 3350
+	4050 3800 3850 3800
+Wire Notes Line
+	6400 4350 6400 5050
+Wire Notes Line
+	6400 5050 7250 5050
+Wire Notes Line
+	7250 5050 7250 4350
+Wire Notes Line
+	7250 4350 6400 4350
 $EndSCHEMATC
