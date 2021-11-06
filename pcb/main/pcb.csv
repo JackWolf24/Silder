@@ -1,0 +1,11 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"REF**,REF**,REF**,REF**,REF**";"SolderWirePad_1x01_Drill0.8mm";5;"0.8mm";;;
+2;"REF**,REF**,REF**,REF**,REF**,REF**,REF**,REF**";"SolderWirePad_1x01_Drill0.8mm";8;".";;;
+3;"U1";"DIP-16_W7.62mm";1;"L293D";;;
+4;"REF**";"PinHeader_1x07_P2.54mm_Horizontal";1;"PinHeader_1x07_P2.54mm_Horizontal";;;
+5;"A1";"Arduino_Nano";1;"Nano_v3.x";;;
+6;"REF**";"PinHeader_1x02_P2.54mm_Horizontal";1;"PinHeader_1x02_P2.54mm_Horizontal";;;
+7;"REF**";"PinSocket_1x08_P2.54mm_Vertical";1;"PinSocket_1x08_P2.54mm_Vertical";;;
+8;"REF**";"PinHeader_1x08_P2.54mm_Horizontal";1;"PinHeader_1x08_P2.54mm_Horizontal";;;
+9;"REF**";"JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical";1;"JST_1x02";;;
+10;"REF**";"JST_EH_B5B-EH-A_1x05_P2.50mm_Vertical";1;"JST_5";;;

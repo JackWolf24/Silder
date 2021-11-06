@@ -7,26 +7,33 @@ instructions
 
 issue:
 software:
-	Home speed == prev. filming speed
-	Imedieate start results in shaky recordings => Acc/decelleration 
-	slow rotaty turn sample rate => interrupts
-	weired ui
+	[ ] Home speed == prev. filming speed
+	[ ] Imedieate start results in shaky recordings => Acc/decelleration 
+	![ ] slow rotaty turn sample rate => interrupts
+	[ ] weired ui
+	[ ] longest interval = lowest rpm setting => move incrementally
 mechanical:
-	el side enclosure
-	!loose belt axis el site
-	rails too close to each other at ends
-	rails too flexible in middle
-	feet fixture not clear 
-	!el. side endstop never touched by kart
-	mot. side endstop never touched by kart
-	no camera mount
-	motor transferes too much vibrations to camera
+	[ ] el side enclosure
+	[x] loose belt axis el site
+	[ ] rails too close to each other at ends
+	[ ] rails too flexible in middle
+	[ ] feet fixture not clear 
+	[ ] !el. side endstop never touched by kart
+	[ ] mot. side endstop never touched by kart
+	[ ] no camera mount
+	[ ] motor transferes too much vibrations to camera
+	![ ] if stpper backdrives as soon there is no power anymore => problem at operating on (steep) angles => dc brushed wormgearmotor
+	[ ] shitty chart
+	[ ] no mouning points for tripods
 elektinics:
-	!only proto electronik 
-	!proto electronic just with arduino uno
-	!just proto electonics
+	[x] only proto electronik 
+	[x] proto electronic just with arduino uno
+	[ ] electronics dosnt fit into housing
+	[x] stepup gets to hot
+	[x] flimsy wiring => custom pcb
+	
 other:
-	no instructions
+	[ ] no instructions
 
 
 Feat:
